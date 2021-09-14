@@ -122,8 +122,8 @@ class MesonApp:
             dir1 = os.getcwd()
         if dir2 is None:
             dir2 = os.getcwd()
-        ndir1 = os.path.abspath(os.path.realpath(dir1))
-        ndir2 = os.path.abspath(os.path.realpath(dir2))
+        ndir1 = os.path.abspath(dir1)
+        ndir2 = os.path.abspath(dir2)
         if not os.path.exists(ndir1):
             os.makedirs(ndir1)
         if not os.path.exists(ndir2):
